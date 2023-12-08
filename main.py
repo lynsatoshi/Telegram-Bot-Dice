@@ -114,7 +114,7 @@ async def show_stats(message: types.Message):
                                     f"\U0001F601 Количество побед: {win_count}\n"
                                     f"\U0001F614 Количество проигрышей: {lose_count}\n"
                                     f"\U0001F5FF Количество ничьих: {draw_count}\n"
-                                    f"\U0001F64C Процент побед: <u>{win_percentage}%</u>",
+                                    f"\U0001F64C Процент побед: <u>{round(win_percentage, 2)}%</u>",
                            parse_mode=types.ParseMode.HTML
                            )
 
